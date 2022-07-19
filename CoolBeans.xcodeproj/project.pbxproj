@@ -13,6 +13,16 @@
 		3A4D561B28869BF200A47DAE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4D560928869BF000A47DAE /* ContentView.swift */; };
 		3A4D561C28869BF200A47DAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A4D560A28869BF200A47DAE /* Assets.xcassets */; };
 		3A4D561D28869BF200A47DAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A4D560A28869BF200A47DAE /* Assets.xcassets */; };
+		3A4D562728869D5C00A47DAE /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A4D562628869D5C00A47DAE /* menu.json */; };
+		3A4D562828869D5C00A47DAE /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A4D562628869D5C00A47DAE /* menu.json */; };
+		3A4D562A28869DB700A47DAE /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4D562928869DB700A47DAE /* Drink.swift */; };
+		3A4D562B28869DB700A47DAE /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4D562928869DB700A47DAE /* Drink.swift */; };
+		3A4D562D2886A15F00A47DAE /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4D562C2886A15F00A47DAE /* MenuSection.swift */; };
+		3A4D562E2886A15F00A47DAE /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4D562C2886A15F00A47DAE /* MenuSection.swift */; };
+		3A4D56302886A1A000A47DAE /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4D562F2886A1A000A47DAE /* Menu.swift */; };
+		3A4D56312886A1A000A47DAE /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4D562F2886A1A000A47DAE /* Menu.swift */; };
+		3A4D56332886AAD000A47DAE /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4D56322886AAD000A47DAE /* MenuView.swift */; };
+		3A4D56342886AAD000A47DAE /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4D56322886AAD000A47DAE /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,11 @@
 		3A4D560F28869BF200A47DAE /* CoolBeans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolBeans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A4D561528869BF200A47DAE /* CoolBeans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolBeans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A4D561728869BF200A47DAE /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		3A4D562628869D5C00A47DAE /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
+		3A4D562928869DB700A47DAE /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		3A4D562C2886A15F00A47DAE /* MenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSection.swift; sourceTree = "<group>"; };
+		3A4D562F2886A1A000A47DAE /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		3A4D56322886AAD000A47DAE /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +69,13 @@
 		3A4D560728869BF000A47DAE /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				3A4D562628869D5C00A47DAE /* menu.json */,
+				3A4D562C2886A15F00A47DAE /* MenuSection.swift */,
+				3A4D562F2886A1A000A47DAE /* Menu.swift */,
 				3A4D560828869BF000A47DAE /* CoolBeansApp.swift */,
 				3A4D560928869BF000A47DAE /* ContentView.swift */,
+				3A4D56322886AAD000A47DAE /* MenuView.swift */,
+				3A4D562928869DB700A47DAE /* Drink.swift */,
 				3A4D560A28869BF200A47DAE /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -157,6 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A4D562728869D5C00A47DAE /* menu.json in Resources */,
 				3A4D561C28869BF200A47DAE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A4D562828869D5C00A47DAE /* menu.json in Resources */,
 				3A4D561D28869BF200A47DAE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,7 +199,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A4D561A28869BF200A47DAE /* ContentView.swift in Sources */,
+				3A4D56332886AAD000A47DAE /* MenuView.swift in Sources */,
+				3A4D562A28869DB700A47DAE /* Drink.swift in Sources */,
+				3A4D562D2886A15F00A47DAE /* MenuSection.swift in Sources */,
 				3A4D561828869BF200A47DAE /* CoolBeansApp.swift in Sources */,
+				3A4D56302886A1A000A47DAE /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +212,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A4D561B28869BF200A47DAE /* ContentView.swift in Sources */,
+				3A4D56342886AAD000A47DAE /* MenuView.swift in Sources */,
+				3A4D562B28869DB700A47DAE /* Drink.swift in Sources */,
+				3A4D562E2886A15F00A47DAE /* MenuSection.swift in Sources */,
 				3A4D561928869BF200A47DAE /* CoolBeansApp.swift in Sources */,
+				3A4D56312886A1A000A47DAE /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
