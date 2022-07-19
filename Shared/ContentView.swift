@@ -11,7 +11,8 @@ struct ContentView: View {
     @StateObject var menu = Menu()
     
     var body: some View {
-        Text("Hello, world!")
+        MenuView()
+            .environmentObject(menu)
             .padding()
     }
 }
