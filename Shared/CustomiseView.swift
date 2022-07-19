@@ -10,8 +10,13 @@ import SwiftUI
 struct CustomiseView: View {
     let drink: Drink
     
+    @EnvironmentObject var menu: Menu
+    
     @State private var size = 0
     @State private var isDecaf = false
+    @State private var extraShots = 0
+    @State private var milk = ConfigurationOption.none
+    @State private var syrup = ConfigurationOption.none
     
     let sizeOptions = ["small", "medium", "large"]
     
@@ -33,7 +38,30 @@ struct CustomiseView: View {
                 }
                 .pickerStyle(.segmented)
                 
+                if drink.coffeeBased {
+                    Stepper("Extra shots: \(extraShots)",
+                        value: $extraShots, in: 0...8)
+                }
+                
                 Toggle("Decaf", isOn: $isDecaf)
+            }
+            
+            Section("Customisations") {
+                Picker("Milk", selection: $milk) {
+                    ForEach(menu.milkOptions) { option in
+                        Text(option.name)
+                            .tag(option)
+                    }
+                }
+            }
+            
+            if drink.coffeeBased {
+                Picker("Syrup", selection: $syrup) {
+                    ForEach(menu.syrupOptions) { option in
+                        Text(option.name)
+                            .tag(option)
+                    }
+                }
             }
             
             Section("Estimates"){
@@ -41,6 +69,8 @@ struct CustomiseView: View {
                 Text("**Calories:** \(calories)kcal")
             }
         }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle(drink.name)
     }
 }
 
