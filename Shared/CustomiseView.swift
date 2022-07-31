@@ -21,11 +21,28 @@ struct CustomiseView: View {
     let sizeOptions = ["small", "medium", "large"]
     
     var caffeine: Int {
-        100
+        var caffeineAmount = drink.caffeine[size]
+        caffeineAmount += (extraShots * 60)
+        
+        if isDecaf {
+            caffeineAmount /= 20
+        }
+        
+        return caffeineAmount
     }
     
     var calories: Int {
-        100
+        var calorieAmount = drink.baseCalories
+        calorieAmount += extraShots * 10
+        
+        if drink.coffeeBased {
+            calorieAmount += milk.calories
+        } else {
+            calorieAmount += milk.calories / 8
+        }
+        
+        calorieAmount += syrup.calories
+        return calorieAmount * (size + 1)
     }
     
     var body: some View {
@@ -53,15 +70,16 @@ struct CustomiseView: View {
                             .tag(option)
                     }
                 }
-            }
-            
-            if drink.coffeeBased {
-                Picker("Syrup", selection: $syrup) {
-                    ForEach(menu.syrupOptions) { option in
-                        Text(option.name)
-                            .tag(option)
+                
+                if drink.coffeeBased {
+                    Picker("Syrup", selection: $syrup) {
+                        ForEach(menu.syrupOptions) { option in
+                            Text(option.name)
+                                .tag(option)
+                        }
                     }
                 }
+                
             }
             
             Section("Estimates"){
