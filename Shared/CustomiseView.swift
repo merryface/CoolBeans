@@ -11,6 +11,7 @@ struct CustomiseView: View {
     let drink: Drink
     
     @EnvironmentObject var menu: Menu
+    @EnvironmentObject var history: History
     
     @State private var size = 0
     @State private var isDecaf = false
@@ -89,6 +90,11 @@ struct CustomiseView: View {
         }
         .navigationBarTitleDisplayMode(.inline)
         .navigationTitle(drink.name)
+        .toolbar {
+            Button("Save") {
+                history.add(drink, size: sizeOptions[size], extraShots: extraShots, isDecaf: isDecaf, milk: milk, syrup: syrup, caffeine: caffeine, calories: calories)
+            }
+        }
     }
 }
 
