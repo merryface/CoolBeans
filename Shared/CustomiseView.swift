@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CustomiseView: View {
     let drink: Drink
+    let dismiss: () -> Void
     
     @EnvironmentObject var menu: Menu
     @EnvironmentObject var history: History
@@ -93,6 +94,8 @@ struct CustomiseView: View {
         .toolbar {
             Button("Save") {
                 history.add(drink, size: sizeOptions[size], extraShots: extraShots, isDecaf: isDecaf, milk: milk, syrup: syrup, caffeine: caffeine, calories: calories)
+                
+                dismiss()
             }
         }
     }
@@ -100,6 +103,6 @@ struct CustomiseView: View {
 
 struct CustomiseView_Previews: PreviewProvider {
     static var previews: some View {
-        CustomiseView(drink: Drink.example)
+        CustomiseView(drink: Drink.example) { }
     }
 }

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MenuView: View {
     @EnvironmentObject var menu: Menu
+    @Environment(\.dismiss) var dismiss
     
     let columns = [
         GridItem(.adaptive(minimum: 150))
@@ -22,7 +23,9 @@ struct MenuView: View {
                         Section {
                             ForEach(section.drinks) { drink in
                                 NavigationLink {
-                                    CustomiseView(drink: drink)
+                                    CustomiseView(drink: drink) {
+                                        dismiss()
+                                    }
                                 } label: {
                                     VStack {
                                         Image(drink.image)
