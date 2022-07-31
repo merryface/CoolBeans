@@ -29,6 +29,10 @@
 		3ACF6DA32886BDA100DD6124 /* ConfigurationOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACF6DA12886BDA100DD6124 /* ConfigurationOption.swift */; };
 		3AE3FAD72896FEE60036BFE6 /* Serving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE3FAD62896FEE60036BFE6 /* Serving.swift */; };
 		3AE3FAD82896FEE60036BFE6 /* Serving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE3FAD62896FEE60036BFE6 /* Serving.swift */; };
+		3AE3FADA2896FFC50036BFE6 /* FileManagerDocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE3FAD92896FFC50036BFE6 /* FileManagerDocumentsDirectory.swift */; };
+		3AE3FADB2896FFC50036BFE6 /* FileManagerDocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE3FAD92896FFC50036BFE6 /* FileManagerDocumentsDirectory.swift */; };
+		3AE3FADD2897003B0036BFE6 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE3FADC2897003B0036BFE6 /* History.swift */; };
+		3AE3FADE2897003B0036BFE6 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE3FADC2897003B0036BFE6 /* History.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,8 @@
 		3A4D56352886B37000A47DAE /* CustomiseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomiseView.swift; sourceTree = "<group>"; };
 		3ACF6DA12886BDA100DD6124 /* ConfigurationOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationOption.swift; sourceTree = "<group>"; };
 		3AE3FAD62896FEE60036BFE6 /* Serving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serving.swift; sourceTree = "<group>"; };
+		3AE3FAD92896FFC50036BFE6 /* FileManagerDocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerDocumentsDirectory.swift; sourceTree = "<group>"; };
+		3AE3FADC2897003B0036BFE6 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,8 @@
 				3A4D56322886AAD000A47DAE /* MenuView.swift */,
 				3A4D56352886B37000A47DAE /* CustomiseView.swift */,
 				3AE3FAD62896FEE60036BFE6 /* Serving.swift */,
+				3AE3FAD92896FFC50036BFE6 /* FileManagerDocumentsDirectory.swift */,
+				3AE3FADC2897003B0036BFE6 /* History.swift */,
 				3A4D562928869DB700A47DAE /* Drink.swift */,
 				3A4D560A28869BF200A47DAE /* Assets.xcassets */,
 			);
@@ -213,11 +221,13 @@
 				3A4D561A28869BF200A47DAE /* ContentView.swift in Sources */,
 				3A4D56332886AAD000A47DAE /* MenuView.swift in Sources */,
 				3A4D562A28869DB700A47DAE /* Drink.swift in Sources */,
+				3AE3FADD2897003B0036BFE6 /* History.swift in Sources */,
 				3A4D562D2886A15F00A47DAE /* MenuSection.swift in Sources */,
 				3A4D561828869BF200A47DAE /* CoolBeansApp.swift in Sources */,
 				3ACF6DA22886BDA100DD6124 /* ConfigurationOption.swift in Sources */,
 				3A4D56362886B37000A47DAE /* CustomiseView.swift in Sources */,
 				3A4D56302886A1A000A47DAE /* Menu.swift in Sources */,
+				3AE3FADA2896FFC50036BFE6 /* FileManagerDocumentsDirectory.swift in Sources */,
 				3AE3FAD72896FEE60036BFE6 /* Serving.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,11 +239,13 @@
 				3A4D561B28869BF200A47DAE /* ContentView.swift in Sources */,
 				3A4D56342886AAD000A47DAE /* MenuView.swift in Sources */,
 				3A4D562B28869DB700A47DAE /* Drink.swift in Sources */,
+				3AE3FADE2897003B0036BFE6 /* History.swift in Sources */,
 				3A4D562E2886A15F00A47DAE /* MenuSection.swift in Sources */,
 				3A4D561928869BF200A47DAE /* CoolBeansApp.swift in Sources */,
 				3ACF6DA32886BDA100DD6124 /* ConfigurationOption.swift in Sources */,
 				3A4D56372886B37000A47DAE /* CustomiseView.swift in Sources */,
 				3A4D56312886A1A000A47DAE /* Menu.swift in Sources */,
+				3AE3FADB2896FFC50036BFE6 /* FileManagerDocumentsDirectory.swift in Sources */,
 				3AE3FAD82896FEE60036BFE6 /* Serving.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
