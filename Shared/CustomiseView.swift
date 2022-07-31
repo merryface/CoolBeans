@@ -20,6 +20,8 @@ struct CustomiseView: View {
     @State private var milk = ConfigurationOption.none
     @State private var syrup = ConfigurationOption.none
     
+    @State private var isFirstAppearance = true
+    
     let sizeOptions = ["small", "medium", "large"]
     
     var caffeine: Int {
@@ -97,6 +99,15 @@ struct CustomiseView: View {
                 
                 dismiss()
             }
+        }
+        .onAppear {
+            guard isFirstAppearance else { return }
+            
+            if drink.servedWithMilk {
+                milk = menu.milkOptions[2]
+            }
+            
+            isFirstAppearance = false
         }
     }
 }

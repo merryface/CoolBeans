@@ -17,7 +17,7 @@ struct MenuSection: Identifiable, Codable {
         if trimmed.isEmpty { return drinks }
         
         return drinks.filter {
-            $0.name.localizedCaseInsensitiveContains(search)
+            $0.name.localizedCaseInsensitiveContains(trimmed)
         }
     }
 }
