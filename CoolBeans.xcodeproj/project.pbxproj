@@ -36,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A31A5852897D3D20091D8E1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3A4D560828869BF000A47DAE /* CoolBeansApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolBeansApp.swift; sourceTree = "<group>"; };
 		3A4D560928869BF000A47DAE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3A4D560A28869BF200A47DAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,6 +91,7 @@
 				3ACF6DA12886BDA100DD6124 /* ConfigurationOption.swift */,
 				3A4D560828869BF000A47DAE /* CoolBeansApp.swift */,
 				3A4D560928869BF000A47DAE /* ContentView.swift */,
+				3A31A5852897D3D20091D8E1 /* README.md */,
 				3A4D56322886AAD000A47DAE /* MenuView.swift */,
 				3A4D56352886B37000A47DAE /* CustomiseView.swift */,
 				3AE3FAD62896FEE60036BFE6 /* Serving.swift */,
