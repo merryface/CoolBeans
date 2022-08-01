@@ -47,6 +47,24 @@ struct ContentView: View {
                             
                             Text("\(serving.caffeine)mg")
                         }
+                        .swipeActions {
+                            Button(role: .destructive) {
+                                withAnimation {
+                                    history.delete(serving: serving)
+                                }
+                            } label: {
+                                    Label("Delete", systemImage: "trash")
+                                }
+                            
+                            Button {
+                                withAnimation {
+                                    history.reorder(serving: serving)
+                                }
+                            } label: {
+                                Label("Repeat", systemImage: "repeat")
+                            }
+                            .tint(.blue)
+                        }
                     }
                 }
             }
